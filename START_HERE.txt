@@ -1,0 +1,25 @@
+FREELANCEHUB - CLIENT + FREELANCER CONNECTED PORTALS
+
+1. Extract ZIP and open freelancehub_work in VS Code.
+2. Create PostgreSQL database freelancehub_db in pgAdmin.
+3. In terminal: python -m venv .venv
+4. Windows: .venv\Scripts\activate
+5. pip install -r requirements.txt
+6. Set database variables in terminal (PowerShell):
+   $env:DB_NAME="freelancehub_db"
+   $env:DB_USER="postgres"
+   $env:DB_PASSWORD="YOUR_POSTGRES_PASSWORD"
+7. python manage.py migrate
+8. python manage.py runserver
+9. Open http://127.0.0.1:8000/
+
+TEST WITH TWO BROWSER SESSIONS (normal and incognito):
+A. Register as CLIENT and create project.
+B. Register as FREELANCER with different username/email; select project.
+C. Freelancer sees assigned, clicks Start working, updates progress.
+D. Client dashboard shows same project and progress after refreshing.
+E. Freelancer submits for review; client approves completion or requests changes.
+F. Log out and log in with SAME existing username/password to see persisted projects.
+
+Both portals are role-aware pages in ONE Django app, sharing ONE PostgreSQL database.
+Do not register again when returning: use Log in.

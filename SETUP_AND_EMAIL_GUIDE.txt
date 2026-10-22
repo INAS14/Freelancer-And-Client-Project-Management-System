@@ -1,0 +1,40 @@
+FreelanceHub - Client + Freelancer Portal (Updated)
+====================================================
+1. Open the freelancehub_work folder (the folder containing manage.py).
+2. Activate your virtual environment and install Django and psycopg:
+   python -m pip install "Django==6.1.2" "psycopg[binary]"
+3. Create a PostgreSQL database called freelancehub_db in pgAdmin.
+4. Set environment variables in PowerShell (replace YOUR_PASSWORD):
+   $env:DB_NAME="freelancehub_db"
+   $env:DB_USER="postgres"
+   $env:DB_PASSWORD="YOUR_PASSWORD"
+5. Run:
+   python manage.py check
+   python manage.py migrate
+   python manage.py createsuperuser
+   python manage.py runserver
+6. Visit http://127.0.0.1:8000/accounts/register/ and select Client or Freelancer.
+   Client dashboard: http://127.0.0.1:8000/dashboard/client/
+   Freelancer dashboard: http://127.0.0.1:8000/dashboard/freelancer/
+   Inbox: http://127.0.0.1:8000/projects/inbox/
+   Django Admin: http://127.0.0.1:8000/admin/
+7. Client posts project; freelancer accepts; freelancer starts work and updates progress;
+   freelancer submits for review; client approves completion. Both dashboards use same DB.
+8. Notifications are ALWAYS saved to the PostgreSQL ProjectNotification table and shown in Inbox.
+   Email sending is OFF by default. Configure SMTP before sending real email.
+   For Gmail: use a Google App Password (NOT your normal Gmail password), if available.
+   PowerShell environment variables BEFORE starting runserver:
+   $env:EMAIL_NOTIFICATIONS_ENABLED="true"
+   $env:EMAIL_HOST="smtp.gmail.com"
+   $env:EMAIL_PORT="587"
+   $env:EMAIL_HOST_USER="youraddress@gmail.com"
+   $env:EMAIL_HOST_PASSWORD="YOUR_APP_PASSWORD"
+   $env:DEFAULT_FROM_EMAIL="youraddress@gmail.com"
+   Use real recipient email addresses on Client/Freelancer registration.
+   Never put credentials in source files or commit them to GitHub.
+9. Email notification events: assigned, started work, progress updated, submitted for review,
+   client requested changes, client approved completion, project participant message.
+10. Admin can see Users, Client Profiles, Freelancer Profiles, Projects, Project Notifications.
+
+IMPORTANT: The ZIP was updated and Python syntax-checked, but a live PostgreSQL and SMTP
+end-to-end test has NOT been performed in this environment.

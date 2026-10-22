@@ -1,0 +1,27 @@
+FREELANCEHUB - TWO PORTALS
+========================
+Client portal: http://127.0.0.1:8000/dashboard/client/
+Freelancer portal: http://127.0.0.1:8000/dashboard/freelancer/
+Registration: http://127.0.0.1:8000/accounts/register/
+
+1. Extract ZIP. Open freelancehub_work folder (contains manage.py).
+2. python -m venv venv
+3. venv\Scripts\activate
+4. pip install -r requirements.txt
+5. Create PostgreSQL database freelancehub_db in pgAdmin.
+6. Set database credentials if necessary in PowerShell:
+   $env:DB_NAME='freelancehub_db'
+   $env:DB_USER='postgres'
+   $env:DB_PASSWORD='YOUR_POSTGRES_PASSWORD'
+7. python manage.py migrate
+8. python manage.py runserver
+
+DEMO:
+A. Register CLIENT with one username/email. Post project in client dashboard.
+B. Log out. Register FREELANCER with DIFFERENT username/email.
+C. Explore Projects -> Apply -> Start Work -> Update Progress -> Submit for Review.
+D. Log out. Log in as CLIENT -> Client Dashboard -> Approve & Complete.
+E. Log in as freelancer again; project remains completed.
+
+NOTE: Two separate portal pages/URLs, one Django server and database.
+Code packaged and syntax checked; full PostgreSQL end-to-end runtime testing has not been performed here.

@@ -1,0 +1,391 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$yu7eFPXKQM77WIODj3CcAa$88EF05KU3eTq06aTw8N6/+beiXGGAN1NV4Y1NH5Ab80=",
+    "last_login": "2026-10-21T12:13:19.174Z",
+    "is_superuser": false,
+    "username": "ranjini_client",
+    "first_name": "",
+    "last_name": "",
+    "email": "freeranjinitest123@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-21T12:13:18.312Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$u6LGX8i9HlJGVuKJmNBRxx$Za0CjOZFkJ9y8DQXC39dtEIPWdQFkk3/PcGebEio/UU=",
+    "last_login": "2026-10-21T12:26:40.903Z",
+    "is_superuser": false,
+    "username": "ranjini_client2",
+    "first_name": "",
+    "last_name": "",
+    "email": "clienttest2026@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-21T12:26:40.391Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$HbjJKpw6JbFyYijJtWw6Gn$iSXCI4pnt8xKGewoyn/WPvBfhfsa0BnLUMbjyLHvpiw=",
+    "last_login": "2026-10-21T12:31:52.889Z",
+    "is_superuser": false,
+    "username": "ranjini_freelancer2",
+    "first_name": "",
+    "last_name": "",
+    "email": "freelancer2026@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-21T12:31:52.013Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2s92zcy3vm1w2plo6h3p2t0xrtq6q91l",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0MoIGV79N43NOyySNXQpLQn499Nkx70OjOZN0xx38q0N1mnOcEAFi6_jCI_pR4iPWK9L4qXuq0zqSNRp21qXJK8bmf7NyixFRggk2hxxnOgEDT3KQZnu86gIZ-9WBZBzGwxORZjvKarI0RMfZaoQw-fL_anOE8:1xJVU0:Q9KzU_TBSnQPYPueZBj6wN2IwYLG9790wWnKtYOdho8",
+    "expire_date": "2026-11-04T12:31:52.905Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "94rpxqyynv6gik7ek2vctzo1jav2hiwf",
+  "fields": {
+    "session_data": ".eJxVjLsOwjAMAP_FM4pSJw5NR_Z-Q5U4NimgVupjQvw7qtQB1rvTvWFI-1aHfZVlGAt0gHD5ZTnxU6ZDlEea7rPhedqWMZsjMaddTT8Xed3O9m9Q01qhg1bbqIThylqoIVTrs0MmkYYFQ9bCllyigF4lushWgjqbGxKr0SN8vu1hOAc:1xJVOy:wjZ4SNZ5t_zgivYd3hDClE27uLaKYoT4qd28hzr0J5U",
+    "expire_date": "2026-11-04T12:26:40.918Z"
+  }
+},
+{
+  "model": "accounts.freelancerprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "ranjini_freelancer2"
+    ],
+    "skills": "Python, Django, HTML, CSS, JavaScript",
+    "experience": 6,
+    "rating": 0.0
+  }
+},
+{
+  "model": "accounts.clientprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "ranjini_client"
+    ],
+    "company_name": "Ranjini Tech Solutions"
+  }
+},
+{
+  "model": "accounts.clientprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "ranjini_client2"
+    ],
+    "company_name": "RRR Tech Solutions"
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 1,
+  "fields": {
+    "client": [
+      "ranjini_client"
+    ],
+    "freelancer": [
+      "ranjini_freelancer2"
+    ],
+    "title": "E-Commerce Website Development",
+    "description": "We are looking for a skilled freelancer to develop a responsive e-commerce website using Python Django, HTML, CSS, JavaScript, and PostgreSQL. The website should include user registration, login, product listings, shopping cart, order management, and an admin dashboard.",
+    "required_skills": "Python, Django, HTML, CSS, JavaScript, PostgreSQL",
+    "budget": "15000.00",
+    "deadline": "2027-08-19",
+    "status": "review",
+    "progress": 100,
+    "work_submission": null,
+    "client_approval": false,
+    "progress_updated_by": [
+      "ranjini_freelancer2"
+    ],
+    "progress_updated_at": "2026-10-21T12:33:03.616Z",
+    "created_at": "2026-10-21T12:15:32.099Z"
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 2,
+  "fields": {
+    "client": [
+      "ranjini_client2"
+    ],
+    "freelancer": [
+      "ranjini_freelancer2"
+    ],
+    "title": "Online Shopping Website Development",
+    "description": "We are looking for a skilled freelancer to develop a modern online shopping website using Python Django. The website should include user registration, login, product management, shopping cart, order placement, payment integration, and an admin dashboard. The freelancer must provide regular project progress updates and submit the completed website before the deadline.",
+    "required_skills": "Python, Django, HTML, CSS, JavaScript, PostgreSQL",
+    "budget": "20000.00",
+    "deadline": "2027-10-18",
+    "status": "completed",
+    "progress": 100,
+    "work_submission": null,
+    "client_approval": true,
+    "progress_updated_by": [
+      "ranjini_freelancer2"
+    ],
+    "progress_updated_at": "2026-10-21T12:34:47.894Z",
+    "created_at": "2026-10-21T12:28:05.253Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 1,
+  "fields": {
+    "project": 1,
+    "recipient": [
+      "ranjini_client"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "assigned",
+    "message": "ranjini_freelancer2 accepted your project: E-Commerce Website Development.",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:32:02.878Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 2,
+  "fields": {
+    "project": 1,
+    "recipient": [
+      "ranjini_freelancer2"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "assigned",
+    "message": "You have been assigned to E-Commerce Website Development.",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:32:02.896Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 3,
+  "fields": {
+    "project": 1,
+    "recipient": [
+      "ranjini_client"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "message",
+    "message": "Message from ranjini_freelancer2 about E-Commerce Website Development:\n\nyour project as been assigned",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:32:29.348Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 4,
+  "fields": {
+    "project": 1,
+    "recipient": [
+      "ranjini_client"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "in_progress",
+    "message": "ranjini_freelancer2 changed E-Commerce Website Development status to In Progress (0%).",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:32:41.275Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 5,
+  "fields": {
+    "project": 1,
+    "recipient": [
+      "ranjini_client"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "progress",
+    "message": "ranjini_freelancer2 updated E-Commerce Website Development progress to 50%.",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:33:03.635Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 6,
+  "fields": {
+    "project": 1,
+    "recipient": [
+      "ranjini_client"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "review",
+    "message": "ranjini_freelancer2 changed E-Commerce Website Development status to Review (100%).",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:33:14.148Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 7,
+  "fields": {
+    "project": 1,
+    "recipient": [
+      "ranjini_client"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "message",
+    "message": "Message from ranjini_freelancer2 about E-Commerce Website Development:\n\nyour project as been completed",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:33:34.227Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 8,
+  "fields": {
+    "project": 2,
+    "recipient": [
+      "ranjini_client2"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "assigned",
+    "message": "ranjini_freelancer2 accepted your project: Online Shopping Website Development.",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:34:23.317Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 9,
+  "fields": {
+    "project": 2,
+    "recipient": [
+      "ranjini_freelancer2"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "assigned",
+    "message": "You have been assigned to Online Shopping Website Development.",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:34:23.335Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 10,
+  "fields": {
+    "project": 2,
+    "recipient": [
+      "ranjini_client2"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "in_progress",
+    "message": "ranjini_freelancer2 changed Online Shopping Website Development status to In Progress (0%).",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:34:37.908Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 11,
+  "fields": {
+    "project": 2,
+    "recipient": [
+      "ranjini_client2"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "progress",
+    "message": "ranjini_freelancer2 updated Online Shopping Website Development progress to 45%.",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:34:47.914Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 12,
+  "fields": {
+    "project": 2,
+    "recipient": [
+      "ranjini_client2"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "message",
+    "message": "Message from ranjini_freelancer2 about Online Shopping Website Development:\n\nin proress in your work",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:35:14.373Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 13,
+  "fields": {
+    "project": 2,
+    "recipient": [
+      "ranjini_client2"
+    ],
+    "actor": [
+      "ranjini_freelancer2"
+    ],
+    "event": "review",
+    "message": "ranjini_freelancer2 changed Online Shopping Website Development status to Review (100%).",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:36:26.910Z"
+  }
+},
+{
+  "model": "projects.projectnotification",
+  "pk": 14,
+  "fields": {
+    "project": 2,
+    "recipient": [
+      "ranjini_freelancer2"
+    ],
+    "actor": [
+      "ranjini_client2"
+    ],
+    "event": "completed",
+    "message": "ranjini_client2 changed Online Shopping Website Development status to Completed (100%).",
+    "email_sent": false,
+    "created_at": "2026-10-21T12:36:56.885Z"
+  }
+}
+]
